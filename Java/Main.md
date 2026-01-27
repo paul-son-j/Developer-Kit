@@ -1,2 +1,2 @@
 # JAVA 
-[Duck Duck Go](https://duckduckgo.com) (Java, Javac, JVM, GC)
+- [Basic](./Basics.md) (Java, Javac, JVM, GC)
