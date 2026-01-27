@@ -4,7 +4,8 @@
 - consist syntax, variables, loop, branching, class, object...
 
 ### Javac compile
-    converts source code (.java file) to bytecode (.class file). Therefore any system with JVM installed can be able to run the java application(Write once run anywhere).
+    converts source code (.java file) to bytecode (.class file). 
+    Therefore any system with JVM installed can be able to run the java application(Write once run anywhere).
 
 ### JVM
     is a machine, that inteprete the bytecode to machine code. 
