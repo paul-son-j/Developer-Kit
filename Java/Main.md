@@ -1,4 +1,7 @@
 # JAVA 
 - [Basic](./Basics.md) (Java, Javac, JVM, GC)
-- [Exception vs Error](./Exception%20vs%20Error.md)
+- [OOPS Basic](./OOPS%20Basic.md)
 - [Methods](./Methods.md)
+- [Exception vs Error](./Exception%20vs%20Error.md)
+- [Enums](./Enums.md)
+- [Modifiers](./Modifiers.md)
