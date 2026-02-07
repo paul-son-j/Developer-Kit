@@ -7,3 +7,4 @@
 - [Modifiers](./Modifiers.md)
 - [Exceptions](./Exceptions.md)
 - [Exceptions vs Errors](./Exception%20vs%20Error.md)
+- [Threads](./Java%20Advanced/Threads.md)

@@ -33,18 +33,18 @@ Note: Main() class itself a single thread in java.
 - has its own stack memory. (shared heap memory ref:JVM)
 - JVM will run the process(method) in that thread.
 
-### Race condition
+## Race condition
 **When running multiple threads, the value changed by one thread cannot be known to other thread. This results in the logical error called Race condition.**
 
-## Fix: Syncronized Keyword
+### Fix: Syncronized Keyword
 - The syncrinozed method will allow only one thread execution at a time.
 - This can be a method or a code block(Recommended for safety).
 
-## Volatile Keywork (Visibility)
+##3 Volatile Keywork (Visibility)
 - Allow the variable state known to all the threads.
 - Good for flags, status checks and not for counter.
 
-## ReentrantLock
+### ReentrantLock
 - **instead of syncronized we can use ReentrantLock to allow single thread at a time**
 
 Notes:
@@ -54,7 +54,11 @@ Notes:
 4. Use safe collections (concurrent collections).
 5. design -> immutability.
 
+## Deadlock
+Having two or more threads and all are waiting for other thread to finished the process is called Deadlock.
 
-
-
-
+### Fix: 
+1. Maintain the order of lock eg: sync(a)-> sync(b) follow same in all locks.
+2. Avoid nested locks
+3. Small lock scope
+4. Instead of lock.lock() (wait forever) us lock.tryLock() (non-blocking)
