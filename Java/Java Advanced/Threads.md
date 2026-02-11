@@ -54,6 +54,8 @@ Notes:
 4. Use safe collections (concurrent collections).
 5. design -> immutability.
 
+Code: [Github](https://github.com/paul-son-j/Scripts/tree/main/Java/ThreadsRaceCondition)
+
 ## Deadlock
 Having two or more threads and all are waiting for other thread to finished the process is called Deadlock.
 
@@ -62,3 +64,5 @@ Having two or more threads and all are waiting for other thread to finished the 
 2. Avoid nested locks
 3. Small lock scope
 4. Instead of lock.lock() (wait forever) us lock.tryLock() (non-blocking)
+
+Code: [Github](https://github.com/paul-son-j/Scripts/tree/main/Java/ThreadDeadLock)
