@@ -27,6 +27,8 @@ contains
 - JNI (Java Native Interface) -> interface to handle te native method libraries
 - Native libraries -> c/c++ native libraries.
 
+[Oracle document](https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-1.html): [Simplified JVM](./JVM/JVM.md)
+
 ### Garbage collection
         clears the unreferenced object from the heap memory.
 
