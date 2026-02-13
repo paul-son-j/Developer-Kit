@@ -30,3 +30,10 @@ Like Java, JVM also have data types to hold values and perform operations. There
     
 All handled via pointers (= reference values) with possible null.
 
+## JVM memory
+
+1. Stack -> local variables, method calls
+2. Heap -> classes and arrays
+3. Method memory
+4. Native memory
+5. PC registors
