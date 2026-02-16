@@ -26,9 +26,11 @@ Eg: Email
 
 ## FIFO
 - Garuntees order of process.
-- No duplicates
+- No duplicates (Deduplication id)
 - Less process compared to standard
 eg: Bank receipt
+
+Note: Fifo use Deduplication_id to with a window of 5 minutes, so any message with the same deduplication id will be treated as same and the queue wont process the message.
 
 ## DLQ - Dead letter Queue
  - If the consumer dies, the visibility timeout will reappear the message in the queue.
