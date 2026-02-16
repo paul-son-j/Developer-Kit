@@ -32,8 +32,40 @@ All handled via pointers (= reference values) with possible null.
 
 ## JVM memory
 
-1. Stack -> local variables, method calls
-2. Heap -> classes and arrays
-3. Method memory
-4. Native memory
-5. PC registors
+JVM memory can be splited in to two, One shared by all threads, per thread memory.
+
+1. Accessed/Shared by all
+    - Heap -> classes and arrays
+    - Method Area
+    - Runtime Constant Pool
+2. Per thread memory
+    - Stack
+    - Native memory
+    - PC Register (Program Counter)
+
+
+### Shared Memory
+ **Heap:** is a shared memory that holds all the objects and arrays.
+
+ **Method Area:** is a part of heap and it holds the class/interface metadata, fields, methods, constructors.
+
+ **Runtime Constant Pool:** Each class/interface has its own runtome constane pool, per class pool it holds the values of literals, consrtants.
+
+ ### Per thread memory
+ **Stack:** is a per thread memory stacked up of **Frames**. each frame represent one method invocation, storing
+ -  local variable
+ - Frame Data
+ - Operand stack.
+ 
+ **Native Memory**: it will be created when the JVM execute the native methods. store frames for native method
+ **PC registers:** holds the address of the currrent instruction to be executed.
+
+
+ | Area                       | Shared?    | Purpose                                     |
+| -------------------------- | ---------- | ------------------------------------------- |
+| **Heap**                   | Yes        | Stores all objects & arrays                 |
+| **Method Area**            | Yes        | Stores class metadata, methods, static vars |
+| **Run-Time Constant Pool** | Yes        | Stores constants & symbolic references      |
+| **PC Register**            | Per Thread | Tracks current instruction for a thread     |
+| **JVM Stack**              | Per Thread | Stores call frames for Java methods         |
+| **Native Method Stack**    | Per Thread | Stores frames for native method calls       |
