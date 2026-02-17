@@ -5,7 +5,7 @@ In old days to create any web application, we have to
 - deploy the war files into the external server (Tomcat)
 - manage dependency.
 
-With the intirduction of spring it reduced the boilerplate code and reduce the time for production ready code.
+With the introduction of spring it reduced the boilerplate code and reduce the time for production ready code.
 
 # Web application
 Any system that provided response by doing some bussiness logic in behind scene for the request.
