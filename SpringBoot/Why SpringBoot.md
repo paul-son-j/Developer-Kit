@@ -32,4 +32,3 @@ Spring + AutoConfiguration + Embeded Servlet + Other opiniated defaults
 
 i.e: no external servelet, web xml, or configuration
 Just run.
-
