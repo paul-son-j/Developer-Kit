@@ -22,4 +22,4 @@ To resolve this, came spring **Bean** where we tell spring that Airtel and Jio a
     3. Spring Anotation. -> @componentScan at config class and @component at Bean class  and @Autowired to inject the object.
 
 By doing so, we can loosely couple our code.
-refer:
+refer: https://github.com/paul-son-j/SpringIOC/blob/main/demo%202/src/main/java/com/example/demo/SpringdemoApplication.java
