@@ -69,3 +69,5 @@ JVM memory can be splited in to two, One shared by all threads, per thread memor
 | **PC Register**            | Per Thread | Tracks current instruction for a thread     |
 | **JVM Stack**              | Per Thread | Stores call frames for Java methods         |
 | **Native Method Stack**    | Per Thread | Stores frames for native method calls       |
+
+Refer: [JVM Flow](image.jpg)
